@@ -1,10 +1,9 @@
-
 import { ArrowDown } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from 'react';
 
 const HeroSection = () => {
-  const roles = ["Web Developer", "Electronic Student"];
+  const roles = ["an Engineer.", "a Web Developer.", "an Electronic Student."];
   const [displayText, setDisplayText] = useState("");
   const [roleIndex, setRoleIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -12,35 +11,27 @@ const HeroSection = () => {
   
   useEffect(() => {
     const handleTyping = () => {
-      // Current complete text of the role
       const fullText = roles[roleIndex];
-      
-      // Current length of displayed text
       const currentLength = displayText.length;
       
-      // If deleting, remove a character
       if (isDeleting) {
         setDisplayText(fullText.substring(0, currentLength - 1));
-        setTypingSpeed(60); // Faster deletion
+        setTypingSpeed(60);
         
-        // If all text deleted, start typing next role
         if (currentLength <= 1) {
           setIsDeleting(false);
           setRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
-          setTypingSpeed(150); // Normal typing speed
+          setTypingSpeed(150);
         }
-      } 
-      // If typing, add a character
-      else {
+      } else {
         setDisplayText(fullText.substring(0, currentLength + 1));
-        setTypingSpeed(150); // Normal typing speed
+        setTypingSpeed(150);
         
-        // If full text is displayed, pause before deleting
         if (currentLength >= fullText.length - 1) {
-          setTypingSpeed(1500); // Pause before deleting
+          setTypingSpeed(1500);
           setTimeout(() => {
             setIsDeleting(true);
-            setTypingSpeed(60); // Faster deletion
+            setTypingSpeed(60);
           }, 1500);
         }
       }
@@ -75,7 +66,7 @@ const HeroSection = () => {
           
           <div className="text-2xl md:text-3xl font-medium text-gray-700 mb-8 h-14 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <div className="flex justify-center">
-              <span className="mr-2">I am a</span>
+              <span className="mr-2">I am</span>
               <span className="text-portfolio-purple font-bold relative min-w-32 inline-block text-left">
                 <span className="relative">
                   {displayText}
@@ -122,4 +113,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
