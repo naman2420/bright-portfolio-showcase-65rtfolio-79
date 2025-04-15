@@ -1,8 +1,20 @@
 
 import { ArrowDown } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from 'react';
 
 const HeroSection = () => {
+  const roles = ["Electronic Student", "Engineer", "Software Developer"];
+  const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
+    }, 2000); // Change role every 2 seconds
+    
+    return () => clearInterval(interval);
+  }, []);
+  
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative pt-20">
       <div className="absolute inset-0 overflow-hidden -z-10">
@@ -26,11 +38,47 @@ const HeroSection = () => {
             Hi, I'm <span className="gradient-text">John Doe</span>
           </h1>
           
-          <h2 className="text-2xl md:text-3xl font-medium text-gray-700 mb-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <div className="text-2xl md:text-3xl font-medium text-gray-700 mb-8 h-14 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <div className="relative flex justify-center">
+              <span className="mr-2">I am an</span>
+              <span 
+                className="text-portfolio-purple font-bold transition-all duration-500 transform hover:scale-110"
+                style={{ 
+                  opacity: 1,
+                  transform: `translateY(${currentRoleIndex === 0 ? '0' : '-100%'})`,
+                  position: 'absolute'
+                }}
+              >
+                {roles[0]}
+              </span>
+              <span 
+                className="text-portfolio-purple font-bold transition-all duration-500 transform hover:scale-110"
+                style={{ 
+                  opacity: currentRoleIndex === 1 ? 1 : 0,
+                  transform: `translateY(${currentRoleIndex === 1 ? '0' : '100%'})`,
+                  position: 'absolute'
+                }}
+              >
+                {roles[1]}
+              </span>
+              <span 
+                className="text-portfolio-purple font-bold transition-all duration-500 transform hover:scale-110"
+                style={{ 
+                  opacity: currentRoleIndex === 2 ? 1 : 0,
+                  transform: `translateY(${currentRoleIndex === 2 ? '0' : '100%'})`,
+                  position: 'absolute'
+                }}
+              >
+                {roles[2]}
+              </span>
+            </div>
+          </div>
+          
+          <h2 className="text-2xl md:text-3xl font-medium text-gray-700 mb-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.6s' }}>
             A creative developer crafting beautiful digital experiences with thoughtful UI design and clean code
           </h2>
           
-          <div className="flex flex-wrap gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
+          <div className="flex flex-wrap gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.8s' }}>
             <Button 
               asChild 
               className="bg-portfolio-purple hover:bg-portfolio-dark-purple text-white"
