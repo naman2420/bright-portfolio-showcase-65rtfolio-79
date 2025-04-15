@@ -77,7 +77,7 @@ const HeroSection = () => {
           </div>
           
           <h2 className="text-2xl md:text-3xl font-medium text-gray-700 mb-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            A creative developer crafting beautiful digital experiences with thoughtful UI design and clean code
+            A fresher who is curious to learn new technology, can jump into any technology and will be able to swim well within a few weeks.
           </h2>
           
           <div className="flex flex-wrap gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.8s' }}>

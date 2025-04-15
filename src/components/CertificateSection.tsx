@@ -6,19 +6,22 @@ const certificates = [
     title: "Advanced Web Development",
     issuer: "Udacity",
     date: "2023",
-    icon: BookOpen
+    icon: BookOpen,
+    link: "https://www.udacity.com/certificate/example"
   },
   {
     title: "Full Stack Development",
     issuer: "freeCodeCamp",
     date: "2022",
-    icon: Award
+    icon: Award,
+    link: "https://www.freecodecamp.org/certification/yourusername/full-stack"
   },
   {
     title: "React Development",
     issuer: "Meta",
     date: "2023",
-    icon: CheckCircle
+    icon: CheckCircle,
+    link: "https://www.coursera.org/account/accomplishments/certificate/example"
   }
 ];
 
@@ -38,21 +41,28 @@ const CertificateSection = () => {
           {certificates.map((cert) => {
             const IconComponent = cert.icon;
             return (
-              <div 
-                key={cert.title}
-                className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+              <a 
+                href={cert.link} 
+                key={cert.title} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:no-underline"
               >
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-portfolio-purple/20 flex items-center justify-center">
-                    <IconComponent className="w-6 h-6 text-portfolio-purple" />
+                <div 
+                  className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 hover:scale-105"
+                >
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="w-12 h-12 rounded-full bg-portfolio-purple/20 flex items-center justify-center">
+                      <IconComponent className="w-6 h-6 text-portfolio-purple" />
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="font-semibold text-lg">{cert.title}</h4>
+                      <p className="text-gray-600">{cert.issuer}</p>
+                    </div>
                   </div>
-                  <div className="flex-1">
-                    <h4 className="font-semibold text-lg">{cert.title}</h4>
-                    <p className="text-gray-600">{cert.issuer}</p>
-                  </div>
+                  <div className="text-sm text-gray-500">{cert.date}</div>
                 </div>
-                <div className="text-sm text-gray-500">{cert.date}</div>
-              </div>
+              </a>
             );
           })}
         </div>
