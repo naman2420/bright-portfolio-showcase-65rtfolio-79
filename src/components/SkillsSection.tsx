@@ -1,18 +1,16 @@
-
 import { Icon } from '@iconify/react';
 
 const skillCategories = {
   featured: [
-    { name: 'Astro', icon: 'devicon:astro' },
+    { name: 'C++', icon: 'devicon:cplusplus' },
+    { name: 'Java', icon: 'devicon:java' },
+    { name: 'Python', icon: 'devicon:python' },
     { name: 'CSS', icon: 'devicon:css3' },
     { name: 'HTML', icon: 'devicon:html5' },
     { name: 'JavaScript', icon: 'devicon:javascript' },
     { name: 'TypeScript', icon: 'devicon:typescript' },
-    { name: 'PHP', icon: 'devicon:php' },
     { name: 'React', icon: 'devicon:react' },
     { name: 'Node.js', icon: 'devicon:nodejs' },
-    { name: 'Express', icon: 'skill-icons:expressjs-dark' },
-    { name: 'Nuxt', icon: 'devicon:nuxtjs' },
     { name: 'Svelte', icon: 'devicon:svelte' },
     { name: 'Vue', icon: 'devicon:vuejs' },
     { name: 'Tailwind CSS', icon: 'devicon:tailwindcss' },
