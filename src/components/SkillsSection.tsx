@@ -7,54 +7,31 @@ const skillCategories = {
     { name: 'CSS', icon: 'devicon:css3' },
     { name: 'HTML', icon: 'devicon:html5' },
     { name: 'JavaScript', icon: 'devicon:javascript' },
-    { name: 'Nuxt', icon: 'devicon:nuxtjs' },
+    { name: 'TypeScript', icon: 'devicon:typescript' },
     { name: 'PHP', icon: 'devicon:php' },
-    { name: 'Svelte', icon: 'devicon:svelte' },
-    { name: 'Tailwind CSS', icon: 'devicon:tailwindcss' },
-    { name: 'Vue', icon: 'devicon:vuejs' }
-  ],
-  languages: [
-    { name: 'CSS', icon: 'devicon:css3' },
-    { name: 'HTML', icon: 'devicon:html5' },
-    { name: 'JavaScript', icon: 'devicon:javascript' },
-    { name: 'PHP', icon: 'devicon:php' },
-    { name: 'TypeScript', icon: 'devicon:typescript' }
-  ],
-  frontend: [
-    { name: 'Astro', icon: 'devicon:astro' },
-    { name: 'Google Maps', icon: 'logos:google-maps' },
-    { name: 'Nuxt', icon: 'devicon:nuxtjs' },
     { name: 'React', icon: 'devicon:react' },
-    { name: 'SASS', icon: 'devicon:sass' },
-    { name: 'Svelte', icon: 'devicon:svelte' },
-    { name: 'SvelteKit', icon: 'devicon:sveltekit' },
-    { name: 'Tailwind CSS', icon: 'devicon:tailwindcss' },
-    { name: 'Vue', icon: 'devicon:vuejs' }
-  ],
-  backend: [
-    { name: 'Appwrite', icon: 'logos:appwrite-icon' },
-    { name: 'Express', icon: 'skill-icons:expressjs-dark' },
-    { name: 'Fastify', icon: 'devicon:fastify' },
-    { name: 'Lucia', icon: 'simple-icons:lucia' },
     { name: 'Node.js', icon: 'devicon:nodejs' },
-    { name: 'Prisma', icon: 'devicon:prisma' }
+    { name: 'Express', icon: 'skill-icons:expressjs-dark' },
+    { name: 'Nuxt', icon: 'devicon:nuxtjs' },
+    { name: 'Svelte', icon: 'devicon:svelte' },
+    { name: 'Vue', icon: 'devicon:vuejs' },
+    { name: 'Tailwind CSS', icon: 'devicon:tailwindcss' },
+    { name: 'Prisma', icon: 'devicon:prisma' },
+    { name: 'Fastify', icon: 'devicon:fastify' }
   ]
 };
 
-const SkillSection = ({ title, skills }) => (
-  <div className="mb-12">
-    <h3 className="text-xl font-heading font-semibold mb-6">{title}</h3>
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-      {skills.map((skill) => (
-        <div
-          key={skill.name}
-          className="bg-black text-white p-4 rounded-lg flex items-center gap-2 transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
-        >
-          <Icon icon={skill.icon} className="w-6 h-6" />
-          <span>{skill.name}</span>
-        </div>
-      ))}
-    </div>
+const SkillSection = ({ skills }) => (
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+    {skills.map((skill) => (
+      <div
+        key={skill.name}
+        className="bg-[#EAEAEA] p-6 rounded-lg flex flex-col items-center gap-3 transform transition-all duration-300 hover:scale-110 hover:shadow-lg group"
+      >
+        <Icon icon={skill.icon} className="w-12 h-12 group-hover:scale-110 transition-transform" />
+        <span className="font-medium text-gray-700">{skill.name}</span>
+      </div>
+    ))}
   </div>
 );
 
@@ -65,14 +42,12 @@ const SkillsSection = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="portfolio-subheading">My Skills</h2>
           <h3 className="portfolio-heading mb-6">Technical Expertise</h3>
+          <p className="text-gray-700">
+            A comprehensive showcase of my technical skills and proficiencies in various technologies.
+          </p>
         </div>
         
-        <div className="space-y-12">
-          <SkillSection title="Featured" skills={skillCategories.featured} />
-          <SkillSection title="Languages" skills={skillCategories.languages} />
-          <SkillSection title="Frontend" skills={skillCategories.frontend} />
-          <SkillSection title="Backend" skills={skillCategories.backend} />
-        </div>
+        <SkillSection skills={skillCategories.featured} />
       </div>
     </section>
   );
