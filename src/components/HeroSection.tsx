@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect } from 'react';
 
 const HeroSection = () => {
-  const roles = ["Electronic Student", "Engineer", "Software Developer"];
+  const roles = ["Web Developer", "Electronic Student"];
   const [displayText, setDisplayText] = useState("");
   const [roleIndex, setRoleIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -75,7 +75,7 @@ const HeroSection = () => {
           
           <div className="text-2xl md:text-3xl font-medium text-gray-700 mb-8 h-14 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <div className="flex justify-center">
-              <span className="mr-2">I am an</span>
+              <span className="mr-2">I am a</span>
               <span className="text-portfolio-purple font-bold relative min-w-32 inline-block text-left">
                 <span className="relative">
                   {displayText}
@@ -122,3 +122,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
