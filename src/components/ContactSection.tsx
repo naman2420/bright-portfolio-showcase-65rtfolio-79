@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Instagram } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -87,7 +88,7 @@ const ContactSection = () => {
               <div className="mt-10">
                 <h4 className="text-sm font-medium text-gray-500 mb-4">Social Profiles</h4>
                 <div className="flex gap-4">
-                  <a href="https://github.com/namanladha" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-portfolio-purple/10 flex items-center justify-center text-portfolio-purple hover:bg-portfolio-purple hover:text-white transition-colors">
+                  <a href="https://github.com/naman2420" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-portfolio-purple/10 flex items-center justify-center text-portfolio-purple hover:bg-portfolio-purple hover:text-white transition-colors">
                     <Github size={18} />
                   </a>
                   <a href="https://www.linkedin.com/in/naman-ladha-188bb0289/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-portfolio-purple/10 flex items-center justify-center text-portfolio-purple hover:bg-portfolio-purple hover:text-white transition-colors">

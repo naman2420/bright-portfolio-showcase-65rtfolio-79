@@ -1,3 +1,4 @@
+
 import { Heart, Github, Linkedin, Twitter, Instagram } from 'lucide-react';
 
 const Footer = () => {
@@ -42,7 +43,7 @@ const Footer = () => {
           <p className="text-gray-300">© {year} Naman Ladha. All rights reserved.</p>
           
           <div className="flex items-center mt-4 md:mt-0 gap-4">
-            <a href="https://github.com/namanladha" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-portfolio-purple transition-colors">
+            <a href="https://github.com/naman2420" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-portfolio-purple transition-colors">
               <Github size={20} />
             </a>
             <a href="https://www.linkedin.com/in/naman-ladha-188bb0289/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-portfolio-purple transition-colors">
