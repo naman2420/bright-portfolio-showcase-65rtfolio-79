@@ -1,5 +1,4 @@
-
-import { Heart, GitHub, Linkedin, Twitter, Instagram } from 'lucide-react';
+import { Heart, Github, Linkedin, Twitter, Instagram } from 'lucide-react';
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -38,15 +37,15 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-300">© {year} Naman Ladha. All rights reserved.</p>
           
           <div className="flex items-center mt-4 md:mt-0 gap-4">
             <a href="https://github.com/namanladha" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-portfolio-purple transition-colors">
-              <GitHub size={20} />
+              <Github size={20} />
             </a>
-            <a href="https://linkedin.com/in/naman-ladha" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-portfolio-purple transition-colors">
+            <a href="https://www.linkedin.com/in/naman-ladha-188bb0289/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-portfolio-purple transition-colors">
               <Linkedin size={20} />
             </a>
             <a href="https://twitter.com/naman_ladha" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-portfolio-purple transition-colors">
