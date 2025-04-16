@@ -17,11 +17,11 @@ const AboutSection = () => {
             <h3 className="portfolio-heading mb-6">Let me introduce myself</h3>
             
             <div className="space-y-4 text-gray-700 mb-8">
-              <p>
-                I'm a passionate developer with over 5 years of experience in creating 
-                beautiful, functional websites and applications. I specialize in front-end 
-                development, creating responsive and intuitive user interfaces.
-              </p>
+              <p className="text-gray-50">I'm a second-year Electronics Engineering student at MIT World Peace University with a strong interest in cybersecurity and emerging technologies. I'm passionate about exploring the intersection of electronics and security, and I enjoy diving into projects that challenge me to think creatively and solve real-world problems.
+
+Through hands-on learning and collaborative work, I aim to contribute to innovation—whether it's through hardware design, secure systems, or unique tech solutions. I'm always curious, always learning, and excited to be part of the ever-evolving tech space.
+
+            </p>
               <p>
                 I approach each project with a focus on clean code and user-centered design, 
                 ensuring the end result is not only visually appealing but also highly functional 
