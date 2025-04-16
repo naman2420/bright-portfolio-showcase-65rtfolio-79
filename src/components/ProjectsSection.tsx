@@ -5,6 +5,15 @@ import { Badge } from "@/components/ui/badge";
 const projects = [
   {
     id: 1,
+    title: "Information Gathering Tool",
+    description: "A Python-based tool that retrieves location and IP address information for any given website. Uses multiple Python libraries (sys, requests, json, sockets) and integrates with ipinfo.io API for comprehensive network information gathering.",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+    tags: ["Python", "Network Tools", "API Integration", "JSON"],
+    demoLink: "#",
+    githubLink: "#"
+  },
+  {
+    id: 1,
     title: "Network and Port Scanner",
     description: "A Python-based cybersecurity tool capable of detecting live/non-live hosts and scanning ports to determine their status (open/closed). Essential for network security assessment and monitoring.",
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
