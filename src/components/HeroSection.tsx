@@ -43,8 +43,8 @@ const HeroSection = () => {
       <div className="section-container">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-6 flex justify-center">
-            <div className="h-24 w-24 rounded-full border-2 border-portfolio-purple overflow-hidden animate-fade-in">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256" alt="Profile" className="w-full h-full object-cover" />
+            <div className="h-32 w-32 rounded-full border-2 border-portfolio-purple overflow-hidden animate-fade-in">
+              <img src="/lovable-uploads/d30b2009-aa29-4e83-96f7-c108156b8ba2.png" alt="Naman Ladha" className="w-full h-full object-cover object-center" />
             </div>
           </div>
           
