@@ -1,15 +1,12 @@
-
 import { ArrowDown } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from 'react';
-
 const HeroSection = () => {
   const roles = ["an Engineer.", "a Web Developer.", "an Electronic Student."];
   const [displayText, setDisplayText] = useState("");
   const [roleIndex, setRoleIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(150);
-
   useEffect(() => {
     const handleTyping = () => {
       const fullText = roles[roleIndex];
@@ -37,7 +34,6 @@ const HeroSection = () => {
     const timer = setTimeout(handleTyping, typingSpeed);
     return () => clearTimeout(timer);
   }, [displayText, isDeleting, roleIndex, roles, typingSpeed]);
-
   return <section id="home" className="min-h-screen flex items-center justify-center relative pt-20">
       <div className="absolute inset-0 overflow-hidden -z-10">
         <div className="absolute w-96 h-96 bg-portfolio-purple/20 rounded-full blur-3xl -top-20 -right-20"></div>
@@ -48,11 +44,7 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-6 flex justify-center">
             <div className="h-32 w-32 rounded-full border-2 border-portfolio-purple overflow-hidden animate-fade-in">
-              <img 
-                src="/lovable-uploads/a4ca733c-fa79-4ad5-a015-44bd0e738aa3.png" 
-                alt="Naman Ladha" 
-                className="w-full h-full object-cover object-center" 
-              />
+              <img alt="Naman Ladha" className="w-full h-full object-cover object-center" src="/lovable-uploads/7eef8640-fc0a-4fab-9fba-72d7e119c391.jpg" />
             </div>
           </div>
           
@@ -102,5 +94,4 @@ const HeroSection = () => {
       </a>
     </section>;
 };
-
 export default HeroSection;
