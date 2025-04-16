@@ -30,9 +30,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-heading font-semibold mb-4">Contact Info</h3>
             <ul className="space-y-2 text-gray-300">
-              <li>contact@example.com</li>
-              <li>+1 (234) 567-890</li>
-              <li>San Francisco, CA</li>
+              <li>namanladha2004@gmail.com</li>
+              <li>+91 7080814370</li>
+              <li> Pune,India</li>
             </ul>
           </div>
         </div>
