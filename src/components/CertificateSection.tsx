@@ -1,27 +1,41 @@
 
-import { Award, BookOpen, CheckCircle } from 'lucide-react';
+import { Award, BookOpen, CheckCircle, CertificateIcon, Target } from 'lucide-react';
 
 const certificates = [
   {
-    title: "Advanced Web Development",
-    issuer: "Udacity",
-    date: "2023",
+    title: "Signal Processing Onramp",
+    issuer: "MathWorks",
+    date: "2024",
     icon: BookOpen,
-    link: "https://www.udacity.com/certificate/example"
+    link: "https://drive.google.com/file/d/1xEn4cBsUGOBHTdrZhs-6QQB04FlDMJyI/view?usp=sharing"
   },
   {
-    title: "Full Stack Development",
-    issuer: "freeCodeCamp",
-    date: "2022",
-    icon: Award,
-    link: "https://www.freecodecamp.org/certification/yourusername/full-stack"
-  },
-  {
-    title: "React Development",
-    issuer: "Meta",
-    date: "2023",
+    title: "MATLAB Onramp",
+    issuer: "MathWorks",
+    date: "2024",
     icon: CheckCircle,
-    link: "https://www.coursera.org/account/accomplishments/certificate/example"
+    link: "https://drive.google.com/file/d/17AovP-EuPP1jkBxbBGOfIJj-n6LPJqyW/view?usp=sharing"
+  },
+  {
+    title: "Internship in Cyber Security",
+    issuer: "Threat Prism",
+    date: "September 2024",
+    icon: Target,
+    link: "https://drive.google.com/file/d/1YIs7Wtxn_GDkDIGBBp250xeGD7WKMLtJ/view?usp=sharing"
+  },
+  {
+    title: "Project Completion Certificate",
+    issuer: "Threat Prism",
+    date: "August 2024",
+    icon: Award,
+    link: "https://drive.google.com/file/d/1wc_kfQyjuRa6LvP9tSuIn6waiVxiBbvT/view?usp=sharing"
+  },
+  {
+    title: "Arduino Training",
+    issuer: "Spoken Tutorial Project, IIT Bombay",
+    date: "September 2024",
+    icon: CertificateIcon,
+    link: "https://drive.google.com/file/d/1YywMdAPjXzvstqy7xelRuKCO3gMi3es2/view?usp=sharing"
   }
 ];
 
@@ -33,7 +47,7 @@ const CertificateSection = () => {
           <h2 className="portfolio-subheading">Certifications</h2>
           <h3 className="portfolio-heading mb-6">Professional Development</h3>
           <p className="text-gray-700">
-            Continuous learning and professional certifications that demonstrate my commitment to growth.
+            A collection of certifications showcasing my continuous learning and skill development across various technologies and domains.
           </p>
         </div>
 
