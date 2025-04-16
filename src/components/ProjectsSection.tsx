@@ -1,4 +1,3 @@
-
 import { ExternalLink, Github } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -6,55 +5,37 @@ import { Badge } from "@/components/ui/badge";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "A full-featured e-commerce platform with product listings, cart functionality, and payment integration.",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+    title: "Network and Port Scanner",
+    description: "A Python-based cybersecurity tool capable of detecting live/non-live hosts and scanning ports to determine their status (open/closed). Essential for network security assessment and monitoring.",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    tags: ["Python", "Network Security", "Port Scanning", "Host Detection"],
     demoLink: "#",
     githubLink: "#"
   },
   {
     id: 2,
-    title: "Portfolio Website",
-    description: "A responsive portfolio website to showcase projects and skills, featuring smooth animations and modern design.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
-    tags: ["React", "Tailwind CSS", "Framer Motion"],
+    title: "Recon Automation for Web Pentesting",
+    description: "Comprehensive Python-based reconnaissance tool for web penetration testing. Features include IP/Port scanning, Barcode/QR generation, password tools, subdomain checking, and security testing utilities.",
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+    tags: ["Python", "Cybersecurity", "Penetration Testing", "Automation"],
     demoLink: "#",
     githubLink: "#"
   },
   {
     id: 3,
-    title: "Task Management App",
-    description: "A productivity app for managing tasks, with features like drag-and-drop, filters, and due dates.",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
-    tags: ["React", "Redux", "Firebase"],
+    title: "E-Commerce Platform",
+    description: "A full-featured e-commerce platform with product listings, cart functionality, and payment integration.",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    tags: ["React", "Node.js", "MongoDB", "Stripe"],
     demoLink: "#",
     githubLink: "#"
   },
   {
     id: 4,
-    title: "Weather Dashboard",
-    description: "A weather application that provides current conditions and forecasts based on location.",
-    image: "https://images.unsplash.com/photo-1496096265110-f83ad7f96608?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
-    tags: ["JavaScript", "API Integration", "CSS"],
-    demoLink: "#",
-    githubLink: "#"
-  },
-  {
-    id: 5,
-    title: "Recipe Finder",
-    description: "An application that helps users find recipes based on available ingredients.",
-    image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
-    tags: ["React", "API Integration", "Styled Components"],
-    demoLink: "#",
-    githubLink: "#"
-  },
-  {
-    id: 6,
-    title: "Fitness Tracker",
-    description: "A health app that tracks workouts, progress, and provides insights on performance.",
-    image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
-    tags: ["Vue.js", "Chart.js", "Firebase"],
+    title: "Task Management App",
+    description: "A productivity app for managing tasks, with features like drag-and-drop, filters, and due dates.",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+    tags: ["React", "Redux", "Firebase"],
     demoLink: "#",
     githubLink: "#"
   }

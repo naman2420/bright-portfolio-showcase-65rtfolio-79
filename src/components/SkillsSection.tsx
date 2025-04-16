@@ -1,21 +1,22 @@
+
 import { Icon } from '@iconify/react';
+import { Code2, Figma, Shield, Wallet, CircuitBoard } from 'lucide-react';
 
 const skillCategories = {
   featured: [
+    { name: 'Web Development', icon: 'web', customIcon: <Code2 className="w-12 h-12" /> },
+    { name: 'Figma', icon: 'figma', customIcon: <Figma className="w-12 h-12" /> },
+    { name: 'Cyber Security', icon: 'security', customIcon: <Shield className="w-12 h-12" /> },
+    { name: 'Financial Literacy', icon: 'finance', customIcon: <Wallet className="w-12 h-12" /> },
+    { name: 'C Language', icon: 'c', customIcon: <CircuitBoard className="w-12 h-12" /> },
     { name: 'C++', icon: 'devicon:cplusplus' },
     { name: 'Java', icon: 'devicon:java' },
     { name: 'Python', icon: 'devicon:python' },
     { name: 'CSS', icon: 'devicon:css3' },
     { name: 'HTML', icon: 'devicon:html5' },
     { name: 'JavaScript', icon: 'devicon:javascript' },
-    { name: 'TypeScript', icon: 'devicon:typescript' },
-    { name: 'React', icon: 'devicon:react' },
     { name: 'Node.js', icon: 'devicon:nodejs' },
-    { name: 'Svelte', icon: 'devicon:svelte' },
-    { name: 'Vue', icon: 'devicon:vuejs' },
-    { name: 'Tailwind CSS', icon: 'devicon:tailwindcss' },
-    { name: 'Prisma', icon: 'devicon:prisma' },
-    { name: 'Fastify', icon: 'devicon:fastify' }
+    { name: 'React', icon: 'devicon:react' }
   ]
 };
 
@@ -26,7 +27,7 @@ const SkillSection = ({ skills }) => (
         key={skill.name}
         className="bg-[#EAEAEA] p-6 rounded-lg flex flex-col items-center gap-3 transform transition-all duration-300 hover:scale-110 hover:shadow-lg group"
       >
-        <Icon icon={skill.icon} className="w-12 h-12 group-hover:scale-110 transition-transform" />
+        {skill.customIcon || <Icon icon={skill.icon} className="w-12 h-12 group-hover:scale-110 transition-transform" />}
         <span className="font-medium text-gray-700">{skill.name}</span>
       </div>
     ))}
