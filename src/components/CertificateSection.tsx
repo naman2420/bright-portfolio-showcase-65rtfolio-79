@@ -1,5 +1,5 @@
 
-import { Award, BookOpen, CheckCircle, CertificateIcon, Target } from 'lucide-react';
+import { Award, BookOpen, CheckCircle, Target, GraduationCap } from 'lucide-react';
 
 const certificates = [
   {
@@ -34,7 +34,7 @@ const certificates = [
     title: "Arduino Training",
     issuer: "Spoken Tutorial Project, IIT Bombay",
     date: "September 2024",
-    icon: CertificateIcon,
+    icon: GraduationCap,
     link: "https://drive.google.com/file/d/1YywMdAPjXzvstqy7xelRuKCO3gMi3es2/view?usp=sharing"
   }
 ];
