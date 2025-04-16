@@ -17,7 +17,7 @@ const AboutSection = () => {
             <h3 className="portfolio-heading mb-6">Let me introduce myself</h3>
             
             <div className="space-y-4 text-gray-700 mb-8">
-              <p className="text-gray-50">I'm a second-year Electronics Engineering student at MIT World Peace University with a strong interest in cybersecurity and emerging technologies. I'm passionate about exploring the intersection of electronics and security, and I enjoy diving into projects that challenge me to think creatively and solve real-world problems.
+              <p className="text-black">I'm a second-year Electronics Engineering student at MIT World Peace University with a strong interest in cybersecurity and emerging technologies. I'm passionate about exploring the intersection of electronics and security, and I enjoy diving into projects that challenge me to think creatively and solve real-world problems.
 
 Through hands-on learning and collaborative work, I aim to contribute to innovation—whether it's through hardware design, secure systems, or unique tech solutions. I'm always curious, always learning, and excited to be part of the ever-evolving tech space.
 
