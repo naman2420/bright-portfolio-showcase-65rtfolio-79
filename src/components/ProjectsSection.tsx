@@ -23,19 +23,28 @@ const projects = [
   },
   {
     id: 3,
-    title: "E-Commerce Platform",
-    description: "A full-featured e-commerce platform with product listings, cart functionality, and payment integration.",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+    title: "Smart Door Lock System",
+    description: "An Arduino-based smart door lock system integrating RFID module, keypad, and servo motor for secure access control. Features dual authentication with passcode and RFID card/tag scanning, enhancing home security through modern technology.",
+    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+    tags: ["Arduino", "IoT", "RFID", "Security Systems"],
     demoLink: "#",
     githubLink: "#"
   },
   {
     id: 4,
-    title: "Task Management App",
-    description: "A productivity app for managing tasks, with features like drag-and-drop, filters, and due dates.",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-    tags: ["React", "Redux", "Firebase"],
+    title: "Smart Glasses for Visual Aid",
+    description: "Innovative Arduino Nano-powered smart glasses designed to assist visually impaired individuals. Utilizes ultrasonic sensors for obstacle detection with haptic/audio feedback, improving mobility and independence.",
+    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
+    tags: ["Arduino", "Assistive Technology", "IoT", "Embedded Systems"],
+    demoLink: "#",
+    githubLink: "#"
+  },
+  {
+    id: 5,
+    title: "Motion-Detecting Camera System",
+    description: "ESP32-CAM based intelligent surveillance system featuring PIR motion detection and automated image capture. When motion is detected, the system captures images and provides LED notifications, ideal for security applications.",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+    tags: ["ESP32", "IoT", "Computer Vision", "Motion Detection"],
     demoLink: "#",
     githubLink: "#"
   }
