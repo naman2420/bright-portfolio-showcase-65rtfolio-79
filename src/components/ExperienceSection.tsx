@@ -1,26 +1,16 @@
-
 import { CircleDot } from 'lucide-react';
 
 const experiences = [
   {
-    period: "Jun 2023 - Aug 2023",
-    title: "Software Development Intern",
-    company: "Company Name",
-    description: "Developed and maintained software applications for embedded systems. Collaborated with cross-functional teams to implement new features and resolve bugs.",
+    period: "Aug 2024 - Sept 2024",
+    title: "Cybersecurity Intern",
+    company: "Threat Prism",
+    description: "Completed a comprehensive cybersecurity internship focused on developing security tools and conducting penetration testing activities.",
     achievements: [
-      "Implemented a real-time data processing algorithm that improved system efficiency by 30%",
-      "Designed and developed a user interface for monitoring system parameters",
-      "Participated in code reviews and contributed to improving development practices"
-    ]
-  },
-  {
-    period: "Dec 2022 - Feb 2023",
-    title: "Research Assistant",
-    company: "University Research Lab",
-    description: "Assisted with research on novel IoT applications for smart cities. Contributed to the design and implementation of prototype systems.",
-    achievements: [
-      "Developed sensor networks for environmental monitoring",
-      "Created data visualization tools for analyzing research results"
+      "Developed a Python-based network and port scanner tool for detecting live hosts and analyzing port status",
+      "Created an automated reconnaissance tool for web penetration testing, including IP scanning, port scanning, and various security testing utilities",
+      "Implemented tools for generating security wordlists, QR codes, and conducting subdomain enumeration",
+      "Gained hands-on experience with information gathering techniques and security assessment methodologies"
     ]
   }
 ];
